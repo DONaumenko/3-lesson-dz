@@ -1,0 +1,29 @@
+Популярные на мой взгляд методы:
+
+1. Списки (list)
+.append(x)
+.extend(L)
+.count(x)
+.pop([i])
+.copy()
+
+2. Строки (str)
+len(S)
+.replace(шаблон, замена)
+.lower()
+.strip([chars])
+.format(*args, **kwargs)
+
+3. Множества (set)
+len(s)
+x in s
+.isdisjoint(other)
+.add(elem)
+.remove(elem)
+
+4. Словари (dict)
+.keys()
+.items()
+.values() 
+.copy()
+.update([other])
