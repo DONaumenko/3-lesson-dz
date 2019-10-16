@@ -47,7 +47,6 @@ for index in random_question_indexes:
         print(alert)
         wrong_answers += 1
 
-
 right_answers = total_questions - wrong_answers
 msg_right = f'Верных ответов: {right_answers}'
 msg_wrong = f'Неверных ответов: {wrong_answers}'
