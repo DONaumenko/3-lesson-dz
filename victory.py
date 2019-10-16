@@ -1,3 +1,5 @@
+import random
+
 # 1 - Билл Гейтс 28.10.1955
 # 2 - Махатма Ганди 02.10.1869
 # 3 - Михаэль Шумахер 03.01.1969
@@ -8,8 +10,6 @@
 # 8 - Вольф Мессинг 10.09.1899
 # 9 - Константин Жуков 01.12.1896
 # 10 - Майкл Джордан 17.02.1963
-
-import random
 
 birthdays = ['28.10.1955', '02.10.1869', '03.01.1969', '25.08.1530', '04.03.1678', '28.06.1971',
              '31.01.1911', '10.09.1899', '01.12.1896', '17.02.1963']
@@ -27,16 +27,19 @@ questions = ['Напишите день рождения Билла Гейтса
 birthday_indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 total_questions = 5
-five_random_question_indexes = random.sample(birthday_indexes, total_questions)
-print(five_random_question_indexes)
+random_question_indexes = random.sample(birthday_indexes, total_questions)
 
 wrong_answers = 0
 
-for index in five_random_question_indexes:
+for index in random_question_indexes:
     answer = input(questions[index])
     if answer != birthdays[index]:
-        # print('Неверно')
+        print('Неверно')
         wrong_answers += 1
-print(wrong_answers)
+
 right_answers = total_questions - wrong_answers
-print(right_answers)
+
+msg_right = f'Верных ответов: {right_answers}'
+msg_wrong = f'Неверных ответов: {wrong_answers}'
+print(msg_right, msg_wrong)
+print('Давайте ещё разок?')
