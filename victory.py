@@ -37,6 +37,11 @@ birthday_indexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 total_questions = 5
 # Выбираем 5 случайных индексов из списка вопросов
 random_question_indexes = random.sample(birthday_indexes, total_questions)
+
+# sample может работать не только с числами но и с любым списокм, можно сразу
+# взять вопросы (но тогда дальше будет другая логика работы программы
+# random_questions = random.sample(questions, total_questions)
+
 # Счетчик неверных ответов
 wrong_answers = 0
 
